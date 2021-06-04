@@ -6,7 +6,14 @@ namespace docker_test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            char ch;
+            do
+            {
+                Console.WriteLine("Hello World!");
+                Console.Write("Press Y to continue:");
+                ch = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+            } while (ch == 'Y' || ch == 'y');
         }
     }
 }
